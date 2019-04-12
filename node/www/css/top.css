@@ -1,0 +1,12 @@
+@charset "utf-8";
+.margin{width:1070px;margin:0 auto;}
+.wrap {height:100px;line-height: 100px;}
+.wrap a{float:left;}
+.wrap .clearfix{float:right;}
+.wrap .clearfix .fr{float:left;}
+.wrap .clearfix .fr a{float:none;}
+.wrap .clearfix .help_wrap{float:right;margin:0 20px}
+
+#sub{width:100px;height:50px;background:#9ff;}
+#car{font-size: 30px;color:red;}
+

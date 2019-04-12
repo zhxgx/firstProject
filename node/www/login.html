@@ -1,0 +1,201 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+	</head>
+	<body>
+		 <div class="regist_header clearfix">
+			<div class="wrap margin">
+		        <a href="http://www.yhd.com"  class="logo"><img src="https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg" height="55" alt="1号店" /></a>
+		        <div class="regist_header_right clearfix">
+		        	<!--<a href="#" class="english_edition" id="edition" style="display:none">English</a>-->
+		            <!--<div class="help_wrap">
+		                <a class="hd_menu" href="http://cms.yhd.com/cms/view.do?topicId=12"><s class="help_ico"></s>帮助中心</a>
+		               
+		            </div>
+		            <span class="fr">您好，欢迎光临1号店！ <a href="register.html" class="blue_link">请注册</a></span>
+		        </div>
+		    </div>
+		  </div>
+		<div class="margin">
+			
+				用户名：<input type="text" id="txt"/><span></span><br><br>
+				密码：<input type="password" id="pas"/><span></span><br><br>
+				<input type="submit" id="sub" value="登录"/>
+				<div id="car"></div>
+		</div>
+	  		
+	</body>
+	<script src="libs/jquery.2.2.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+	<title>我的购物车-1号店,只为更好的生活</title>
+
+
+
+<!--css start-->
+<link href="//img.yihaodianimg.com/cart/global/css/global_site_simple.css?c939f97" rel="stylesheet" type="text/css"/>
+ <link href="//img.yihaodianimg.com/cart/shopping/pc/css/cart_main.css?c939f97" rel="stylesheet" type="text/css"/>
+<style>
+	
+#login_pop_content {position: fixed;z-index:100002;top: 0px;left: 50%;width: 785px;padding: 0px 5px 5px;
+    margin-left: -397px;background-color: rgba(0, 0, 0, 0.2);display:none;
+}
+</style>
+
+</head>
+
+<body id="comParamId" data-param='{"globalPageCode":"-1","currPageId":"-1"}'>
+
+<div class="hd_header_wrap">
+<div class="hd_top_bar">
+  <div class="wrap clearfix" style="width: 1200px;">
+      <a href="index.html" class="hd_topbar_home">
+      <i class="hd_iconfont">&#xe623;</i>
+      <span>1号店首页</span>
+    </a>
+
+<div class="hd_indxProvce hd_has_child" id="headerSelectProvince" clstag="pageclick|keycount|global_201709226|1">
+    <a class="hd_topbar_city" id="currProvince" href="javascript:void(0);">
+        <i class="hd_iconfont">&#xe621;</i>
+        <span>送货地址：</span><em></em>
+    </a>
+
+    <div class="hd_city_select hd_city_opacity" style="display: none" id="hd_city_select"  data-hot="2817,上海市,2&&2816,北京市,1&&1601,广州市,19&&1607,深圳市,19&&904,南京市,12&&1213,杭州市,15&&1381,武汉市,17&&1930,成都市,22&&48131,重庆市,4&&988,苏州市,12&&51035,天津市,3&&1116,合肥市,14&&1233,温州市,15&&984,无锡市,12&&1158,宁波市,15&&978,常州市,12">
+        <a href="javascript:;" class="hd_city_close">×</a>
+
+        <div class="hd_cur_city_wrap clearfix">
+            <span class="hd_cur_city">搜索城市：</span>
+            <div class="hd_city_search">
+                <div class="hd_city_input">
+                    <em class="hd_iconfont"></em>
+                    <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入城市名称">
+                    <span class="hd_citys_close">x</span>
+                </div>
+                <div class="hd_city_suggest" style="display: none;">
+
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="hd_city_list" id="hd_city_list_context">
+            <ul>
+                <li class="clearfix">
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="hd_topbar_right">
+      <ul>
+        <li id="global_unlogin">
+          <div class="hd_unlogin">
+            <span class="hd_hi">Hi,请</span>
+            <a href="del.html" class="hd_login_link"
+               clstag="pageclick|keycount|global_201709226|2">登录&nbsp;</a>
+            <a href="register.html" class="hd_regist_link"
+               clstag="pageclick|keycount|global_201709226|3">&nbsp;注册</a>
+          </div>
+        </li>
+        <li id="global_login" class="hd_has_child" style="display:none" data-type="2017"
+            clstag="pageclick|keycount|global_201709226|4">
+          <div class="hd_login">
+            <span class="hd_hi">Hi,</span>
+            <a href="//home.yhd.com/myyhdindex/index.do" target="_blank" class="hd_login_name">__nickName__</a>
+            <a href="//vip.yhd.com" target="_blank" class="hd_vip hd_vip__gradeStyle__">__gradeDesc__</a>
+            <i class="hd_iconfont">&#xe627;</i>
+          </div>
+          <div class="hd_user_privilege">
+            <a href="javascript:;" class="hd_login_out">退出</a>
+            <div class="clearfix">
+
+            </div>
+            <div class="hd_privilege_tit"><span>我可尊享<em>5</em>项特权</span></div>
+            <div class="hd_privilege_wrap hd_privilege_slide">
+              <a href="javascript:;" class="prev_btn hd_iconfont"></a>
+              <div class="hd_privilege clearfix">
+                <div class="hd_privilege_list" style="left: -60px; margin-left: 0px;">
+
+                </div>
+              </div>
+              <a href="javascript:;" class="next_btn hd_iconfont"></a>
+            </div>
+          </div>
+        </li>
+        <li clstag="pageclick|keycount|global_201709226|5">
+          <div class="hd_menu hd_notice" id="hdUserMsg" style="display: none" data-cfg="1">
+            <a href="//edm.yhd.com/pcMsg/myMessage.action;" rel="nofollow" target='_blank'>我的消息&nbsp;(<em
+                class="hd_has_num">0</em>)</a>
+          </div>
+        </li>
+        <li clstag="pageclick|keycount|global_201709226|6">
+          <div class="hd_menu">
+            <a href="//home.yhd.com/order/toOrderList.do" target="_blank" rel="nofollow"><i
+                class="hd_iconfont">&#xe612;</i>我的订单</a>
+          </div>
+        </li>
+        <li class="hd_has_child" clstag="pageclick|keycount|global_201709226|7">
+          <div class="hd_menu">
+            <a href="//cms.yhd.com/cms/view.do?topicId=43" target="_blank">客户服务</a>
+            <i class="hd_iconfont">&#xe627;</i>
+          </div>
+            <div class="hd_menu_list">
+        <a  href="//home.yhd.com/order/toOrderList.do" target="_blank"  title="包裹跟踪">包裹跟踪</a>
+        <a  href="//rma.yhd.com/return/returnApplyList.do" target="_blank"  title="在线退换货">在线退换货</a>
+            </div>
+        </li>
+           
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="no_prod offline clearfix"> 
+  	<div class="img_wrap"> 
+  		<img src="//img.yihaodianimg.com/cart/shopping/pc/images/offline.gif" width="300" height="300">
+  	</div> 
+  	<div class="info"> 
+  		<p>购物车还是空的呢，快去采购吧~<br>或者登录查看之前加入的商品。
+  		</p> 
+  		<div class="btn_box"> 
+  			<a href="javascript:yhdPublicLogin.showLoginDiv('', false, '1');" class="confirm" clstag="pageclick|keycount|cart_201709267|6">登录</a> 
+  			<a href="index.html" class="cancel" clstag="pageclick|keycount|cart_201709267|7">去逛逛</a>
+  		</div> 
+  	</div>
+  </div> 
+	<div id="login_pop_content" style="padding:30px 20px 54px 0;border:1px solid #b4b4b4;border-top:0 none; background:#FFF url(https://passport.yhd.com/front-passport/passport/images/yhd_loading.gif) no-repeat center center;">
+		<i id="close_btn" style="position:absolute; right:10px; top:10px; display:block; width:12px; height:12px; background:url(https://passport.yhd.com/front-passport/passport/images/login_popup.png) no-repeat -340px 0; cursor:pointer;"></i>
+		<iframe id="loginIframe" frameborder="0" scrolling="no" style="border: 0px none;" width="763" height="270" src="https://passport.yhd.com/publicPassport/loginFrame.do?fromDomain=https%3A%2F%2Fcart.yhd.com&amp;returnUrl=https%3A%2F%2Fcart.yhd.com%2Fcart%2Fcart.do">
+			
+		</iframe>
+	</div>
+<!-- foot include end -->
+</body>
+	<script>
+		var cont = document.getElementById("login_pop_content");
+		var conf = document.getElementsByClassName("confirm")[0];
+		var clos = document.getElementById("close_btn");
+		conf.onclick = function(){
+			cont.style.display = "block";
+			clos.onclick = function(){
+				cont.style.display = "none";			
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,8 @@
+h3{font-size: 2em;}
+h3 a{color:red;font-size: 1.5em;}
+#cont{width:1000px;border: solid 1px black;margin: 50px auto;}
+
+.box{width: 250px;float: left;border: solid 1px black;box-sizing: border-box;text-align: center;}
+.box img{width:100px;height:140px;}
+.box p{margin: 10px 0;height: 40px;overflow: hidden;line-height: 20px;}
+.box em{display:block;width:100px;line-height: 26px;text-align:center;cursor:pointer;margin: 10px auto;font-style: normal;background: dodgerblue;color: #fff;}

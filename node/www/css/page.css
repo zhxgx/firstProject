@@ -1,0 +1,65 @@
+@charset "utf-8";
+#header{height:142px;}
+#header a{float:left;}
+#header a.logo1 img{height:140px;width:140px;}
+#header a.logo2 img{height:90px;width:160px;margin-top:36px}
+#header .header-c{float:left;overflow:hidden;margin:50px 0 0 80px;}
+#header .header-c input{border:0;border:1px solid #666666;background:none;height:40px;float:left;overflow:hidden;}
+#header .header-c #txt{padding:0 20px;width:260px;box-sizing:border-box;border-radius: 20px 0 0 20px;border-right:0;}
+#header .header-c #btn{padding:10px 20px;border-left:0;width:20px;background:url(../images/log.png) no-repeat center;border-radius: 0px 20px 20px 0px;}
+#header .header-c .header-c-nav ul li {float:left;margin-right:10px;}
+
+#header #car{width:120px;height:40px;color:red;border:1px solid #666666;margin:50px 0 0 40px;border-radius: 20px;line-height:40px;text-align:center;
+background:url(../images/che.png) no-repeat 10px;}
+
+
+#nav{position:relative;}
+#nav ul li{float:left;padding:10px;}
+#nav ul li:nth-child(1){background:red;}
+#nav ul li:nth-child(1) a{color:#fff;}
+
+#nav .nav-w{position:absolute;top:35px;z-index: 10;}
+#nav .nav-w .nav-w-e{width:70px;height:20px;background:#666666;display:none;}
+#nav .nav-w .ie{display:none; font-size:20px;color:#00BFFF;}
+#nav .nav-w .nav-w-e:hover .ie{display:block;}
+
+#banner{position: relative;height:400px;background:url(//img13.360buyimg.com/img/jfs/t1/15080/17/14670/83595/5caaf79cEd7437d34/6ba02f25dd5668fe.jpg) no-repeat center;}
+
+
+
+
+
+.qua_show{padding:10px;border:1px solid #1E90FF;margin-top:20px}
+.qua_show .qua_tit{height: 66px;display:block;line-height:66px;}
+.qua_show .qua_tit .qua_tit_spanFirst{color: #B77347;font-size: 26px}
+.qua_show .qua_tit .qua_tit_spanLast{font-size: 16px}
+.qua_show .qua_show_con{ position:relative;    }
+.qua_show .qua_show_con .qua_show_con_left{width: 190px; height: 335px; float: left;}   
+.qua_show .qua_show_con .qua_left_font_con{position:absolute; font-size:14px;color: #fff; width: 176px; height: 90px; margin-left: 14px; top: 16px;  }
+.qua_show .qua_show_con .qua_left_font_con .qua_left_f_con_font{background: rgba(255,255,255,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.61) !important;
+	 width:74px;height:23px;text-align:center;line-height:23px;float:left;margin-right:9px;margin-bottom: 9px; color: #fff; overflow: hidden; }
+
+
+.qua_show .qua_show_con .qua_show_con_right{height: 335px;float: left;width:700px;}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks{width:335px;height:167px;position:relative;float:left;background-color:#faf7f6;}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks .import_tit{margin: 40px 0 0 30px;color: #793a11; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; width: 150px;}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks .voucher_tit{color: #b77347;
+    margin: 5px 0 0 30px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; width: 150px;}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks .buy_btn{    width: 78px; height: 27px; text-align: center;
+    line-height: 27px; margin: 15px 0 0 30px; color: #c0845c;cursor: pointer;overflow: hidden;    border: 1px solid rgba(192,132,92,0.5);}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks img{position: absolute;right: 30px;bottom: 27px;    cursor: pointer; width: 110px; height: 110px;}
+
+.qua_show .qua_show_con .qua_show_con_right .bursting{ float: left; position: relative; width: 167px; height: 167px;cursor: pointer;}
+.qua_show .qua_show_con .qua_show_con_right .bursting img{width:90px}
+
+.lb_tab {width:50px;position: fixed;top:300px;left:0;}
+.lb_tab a{display:block;height:50px;text-align:center;margin-top:10px;background:#793A11;line-height:50px;font-size:20px;color:#fff;}
+
+
+
+
+
+
+

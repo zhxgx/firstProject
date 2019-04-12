@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="tp_page" content="2.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta name="renderer" content="webkit">
+	<title>1号店登录</title>
+	<link href="css/del.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://passport.yhd.com/front-passport/passport/js/framework/common_yhd.js"></script>
+	<script type="text/javascript" src="https://passport.yhd.com/front-passport/passport/js/pc_login_new.js?04f6101"></script>
+	<script type="text/javascript" src="https://passport.yhd.com/front-passport/passport/js/login_slideCaptcha.js?04f6101"></script>
+
+    <link rel="shortcut icon" href="https://passport.yhd.com/front-passport/passport/images/yhd_favicon.ico"/>
+
+<script>
+	
+</script>
+</head>
+
+<body>
+		    <link rel="shortcut icon" href="https://passport.yhd.com/front-passport/passport/images/yhd_favicon.ico"/>
+  <div class="regist_header clearfix">
+	<div class="wrap">
+        <a href="#" class="logo"><img src="https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg" height="55" alt="1号店" /></a>
+        <div class="regist_header_right clearfix">
+        	<!--<a href="#" class="english_edition" id="edition" style="display:none">English</a>-->
+            <div class="help_wrap">
+                <a class="hd_menu" href="http://cms.yhd.com/cms/view.do?topicId=12"><s class="help_ico"></s>帮助中心</a>
+                <div class="hd_menu_list">
+                   
+                </div>
+            </div>
+            <span class="fr">您好，欢迎光临1号店！ <a href="/passport/login_input.do" class="blue_link">请登录</a></span>
+        </div>
+    </div>
+  </div>
+	
+	<script type="text/javascript" src="https://passport.yhd.com/front-passport/passport/js/jquery.cookie.js?04f6101"></script>
+  
+   
+	<input type="hidden" id="isAutoLogin" value="0"/>
+	<input type="hidden" id="autoLoginFlag" value="1"/>
+	<input type="hidden" id="uuid">
+	<div class="login_wrap">
+		<div class="wrap clearfix">
+			<div class="mod_login_wrap">
+                <div class="login_pc">
+					<p id="error_tips" class="error_tips" style="display:none">您填写的账户名不存在请核对后重新填写</p>
+	            	<div class="clearfix">
+            		<h3>1号店用户登录</h3>
+            		<a  href='register.html'  class="regist_new blue_link">注册新账号</a>
+            		</div>
+	      
+				<div class="login_form">
+					<input id="login_source" type="hidden" value="1"/>
+					<input id="login_pc_home_page" type="hidden" value="1"/>
+	
+					
+					<div class="form_item_wrap">
+					    <div class="form_item">
+					        <label class="user_ico">&nbsp;</label>
+					        <input id="un" type="text" _input name="credentials.username" spellcheck="false" tabIndex="1" class="ipt ipt_username"
+					        style="outline: none;" placeholder="用户名" />
+					    </div>
+					    <div class="form_item">
+					        <label class="paswd_ico">&nbsp;</label>
+					        <input id="pw" type="password" _input oncopy="return false" onpaste="return false" oncut="return false" oncontextmenu="return false" name="credentials.password" tabIndex="2" class="ipt ipt_password gay_text" placeholder="密码 " style="outline: none;"/>
+					
+					    </div>
+					   <div id='vcd_div' class="verify_code clearfix" >
+					   	<input id="validateSig" type="hidden"/>
+                    	 <div class="form_item cur_right">
+                        	<label class="verify_ico">&nbsp;</label>
+                            <input id="vcd" type="text" name="validCode" maxlength="4" tabindex="1" value="验证码" class="ipt ipt_code gay_text"
+                            onblur="javascript: jsLoginValidatCode.checkValidCodeOnBlur()" 
+					        onkeyup="javascript: jsLoginValidatCode.checkValidCodeOnKeyUp();">
+                            <span tabindex="-1" class="code_right" id="code_right"></span>
+                            <span tabindex="-1" class="code_wrong" id="code_wrong"></span>
+                         </div>
+                    	 <a class="verify_code_box" onclick="jsLoginValidatCode.passport_refresh_valid_code();return false;" href="#">
+                            <img id="valid_code_pic" name="valid_code_pic">
+                            <i tabindex="-1" class="btn_change">换一张</i>
+                         </a>
+                      </div>
+					    
+					 <div class="auto_login clearfix" >
+					 	<p class="clearfix">
+                    	<a id="check_agreement" href="#" class="uncheck_agreement">自动登录</a>
+                    	<input id="autoLoginCheck" type="hidden" />
+                    	<span id="agreement_tips" class="auto_tips"  style="display: none;">请勿在公用电脑上启用</span>
+                        </p>
+                         <p class="service_agreement">点击登录，表示您同意1号店<a href="http://cms.yhd.com/cms/view.do?topicId=10" class="blue_link" target="_blank">《服务协议及隐私声明》</a></p>
+                        <a href="/passport/find_pwd_input.do" target="_blank" class="forget_pswd" tabIndex="-1">忘记密码？</a>
+                    </div>
+                    	
+					    <button id="login" type="button" class="login_btn" _submit onclick="javascript:double_submit();return false;">登录</button>
+						<div id="car"></div>
+					</div>
+					
+					<div class="joint_landing_wrap">
+						<p>更多合作网站账号登录</p>
+<div class="clearfix">
+		<ul class="account_list clearfix">
+			<li><a href="https://passport.yhd.com/qq/login.do" target="_blank" class="iconfont qq" title="QQ">&#xe606;</a></li>
+			<li><a href="https://passport.yhd.com/jingdong/login.do" target="_blank" class="iconfont jingdong" title="京东">&#xe60b;</a></li>
+			<li><a href="https://passport.yhd.com/wechat/login.do" target="_blank" class="iconfont weixin" title="微信">&#xe609;</a></li>
+			<li><a href="https://passport.yhd.com/sina/login.do" target="_blank" class="iconfont sina" title="新浪微博">&#xe608;</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="unfold" title="展开">更多合作网站<i></i></a>
+	</div>
+	<ul class="more_landing clearfix">
+				<li><a href="https://passport.yhd.com/alipay/login.do" target="_blank"><i class="iconfont alipay">&#xe601;</i>支付宝</a></li>
+				<li><a href="https://passport.yhd.com/netease/login.do" target="_blank"><i class="iconfont wangyi">&#xe600;</i>网易</a></li>
+				<li><a href="https://passport.yhd.com/baidu/login.do" target="_blank"><i class="iconfont baidu">&#xe602;</i>百度</a></li>
+				<li><a href="https://passport.yhd.com/renren/login.do" target="_blank"><i class="iconfont renren">&#xe607;</i>人人网</a></li>
+				<li><a href="https://passport.yhd.com/wanlitong/login.do" target="_blank"><i class="iconfont pingan">&#xe605;</i>平安万里通</a></li>
+				<li><a href="https://passport.yhd.com/mogujie/login.do" target="_blank"><i class="iconfont mogujie">&#xe604;</i>蘑菇街</a></li>
+	</ul>
+					</div>
+					<!--
+					-->
+				</div>
+				</div>
+                <!--login code-20160613-zhangqian7-S-->
+                
+                <!--login code-E-->
+
+
+			 <div class="login_switch">
+                <em></em>
+                <a href="javascript:;" class="two_dimension_code"></a>
+                <a href="javascript:;" class="static_pc"></a>
+            </div>
+        </div>
+			<div class="mod_left_banner"><a id="imgLink" target="_blank"><img id="img" src="https://passport.yhd.com/front-passport/passport/images/login_pic.png" /></a></div>
+		</div>
+	</div>
+	
+	<div class="mod_login_bindmb_point"></div>	
+	
+	<div id="simplefooter"><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备16050468号</a>|<a>沪B2-20170039</a>|<a href="http://d7.yihaodianimg.com/N09/M07/BD/7B/ChEi11kJnKaAJQMrAAK-LnhML4o60600.jpg" data-ref="YHD_Footer_Licence" target="_blank">营业执照</a><p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p></div> 
+	
+
+    
+</body>
+	<script type="text/javascript" src="libs/jquery.2.2.4.js" ></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</html>

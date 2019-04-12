@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.margin{width:1070px;margin:0 auto;}
+
+#top{height: 30px;border-bottom: 1px solid #e5e5e5;background-color: #f4f4f4;line-height:30px;}
+#top a.s{float:left;}
+#top a:hover{color:red;}
+#top a i{display:inline-block;height:15px;width:11px;background:url(../images/z-1.png) no-repeat;}
+#top .top-l2{float:left;margin-left:10px;pading-right:10px;}
+#top .top-l2 span:hover{color:red;cursor:pointer;}
+#top .top-l2 i{display:inline-block;height:12px;width:15px;background:url(../images/z-2.png) no-repeat;}
+#top .top-r{float:right;padding-left:30px}
+#top .top-r>span{float:left;margin-right:20px;}
+#top .top-r span a{color:red;}
+#top .top-r>a{margin-right:20px;float:left;}
+#top .top-r p{float:left;margin-right:20px;}
+#top .top-r p span{}
+#top .top-r p i.a{display:inline-block;height:15px;width:15px;background:url(../images/z-3.png) no-repeat;}
+#top .top-r p i.c{display:inline-block;height:14px;width:13px;background:url(../images/z-4.png) no-repeat;}
+
+

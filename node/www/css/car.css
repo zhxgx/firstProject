@@ -1,0 +1,7 @@
+h2{font-size: 2em;}
+h2 a{color:red;font-size: 1.5em;}
+	img{width: 60px;}
+	h2{margin: 30px 0;text-indent: 30px;}
+	em{display: block;width: 100px;line-height: 30px;text-align: center;background: deepskyblue;border-radius: 6px;margin: 0 auto;margin-top: 10px;font-style: normal;cursor: pointer;color: #fff;}
+	input[type="number"]{width:50px}
+
